@@ -1,0 +1,149 @@
+@import url('tabelas.css');
+
+html {
+	font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+	font-family: 'Lato', sans-serif;
+	color: #333333;
+}
+
+p {
+	color: #454545;
+}
+
+header p {
+	color: #fff;
+	font-size: 1.5rem;
+}
+
+header h2 {
+	font-weight: 100;
+	padding-bottom: 5px;
+}
+
+header > h2 {
+	font-weight: 600;
+}
+
+h2 + p {
+	background: #FF0;
+	color: #333;
+}
+
+h2 ~ h5 {
+	font-size: 1.2rem;
+}
+
+div ~ p {
+	text-transform: uppercase;
+}
+
+.table-container h2 {
+	text-align: center;
+	font-size: 20px;
+	font-weight: bolder;
+}
+
+.table-container h3 {
+	text-align: center;
+	font-size: 10px;
+	padding-bottom: 20px;
+	color: grey;
+}
+
+a {
+	color: #555555;
+	text-decoration: none; /* o padrão é underline */
+	font-size: 1.5rem;
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+a:visited {
+	color: #f00;
+}
+
+a:active {
+	color: #096;
+}
+
+a:hover {
+	color: #009;
+	background: #eee;
+}
+
+html {
+	font-family: sans-serif;
+}
+
+h1, h2, h3 {
+	font-weight: 400;
+}
+
+nav h3 {
+	padding-left: 5px;
+}
+
+p {
+	font-weight: normal;
+	font-size: 1.4rem;
+}
+
+ul {
+	padding-left: .5rem;
+	margin-left: .5rem;	
+}
+
+li {
+	letter-spacing: 0.01rem;
+	font-family: sans-serif;
+	line-height: 1.5;
+}
+
+h3 {
+	font: bold 2rem/2 sans-serif;
+}
+
+#aulas {
+	padding-top: 6rem;
+}
+
+section {
+	background: rgba(255, 255, 255, 0.95);
+}
+
+p {
+	color: blue;
+	color: #034589;
+}
+
+header, footer {
+	background-color: #828282;
+}
+
+footer p {
+	color: rgb(255, 255, 255);
+	text-align: center;
+	padding: 1.3rem;
+}
+
+footer {
+	height: 6rem;
+}
+
+.navegacao {
+	background-color: rgba(240, 240, 240, .8);
+}
+
+.navegacao li a {
+	color: black;
+	font-weight: bold;
+	font-size: 1.4rem;
+	padding: 5px;
+	border: 1px solid rgb(200, 200, 200);
+}
+
+.navegacao li a:hover {
+	background-color: rgba(150, 150, 200, .5);
+	color: #333333;
+}

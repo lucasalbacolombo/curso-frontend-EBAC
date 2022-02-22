@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt_br"> 
+	<head> 
+		<title>Exercício Layouts Fluidos</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="./css/reset.css">
+		<link rel="stylesheet" type="text/css" href="./css/layout.css">
+		<link rel="stylesheet" type="text/css" href="./css/tabelas.css">
+	</head>
+
+	<body>
+
+		<header>
+			<h2>Curso Front-end</h2>
+			<h5>Escola Britânica de Artes Criativas e Tecnologia</h5>
+		</header>
+
+		<section>
+
+			<nav>
+				<ul class="navegacao">
+					<li><a href="./home.html">HOME</a></li>
+					<li><a href="./tabela.html">TABELA</a></li>
+					<li><a href="./sobre.html">SOBRE NÓS</a></li>
+					<li><a href="#contato">CONTATO</a></li>
+				</ul>
+			</nav>
+
+			<article>
+
+				<h1>Contato</h1>
+				<p>Preencha os campos abaixo e venha tomar um café conosco!</p>
+
+				<div class="imagem">
+					<form method="post"> 
+							<div>
+								<label for="nome">Nome</label>
+								<input type="text" name="Nome" id=nome placeholder="Digite seu nome">
+							</div>
+							<div>
+								<label for="email">E-mail</label>
+								<input type="email" name="e-mail" id=email placeholder="Digite seu e-mail"> 
+							</div>
+							<div>
+								<label for="mensagem">Mensagem</label>
+								<textarea name="mensagem" id="mensagem" rows="5" placeholder="Digite sua mensagem"></textarea>
+							</div>
+							<div>
+								<input type="submit" id="botao">
+							</div>
+					</form>
+				</div>	
+
+			</article>
+
+		</section>
+
+		<footer>
+			<p>Desenvolvido por Lucas</p>
+		</footer>
+
+	</body>
+</html>

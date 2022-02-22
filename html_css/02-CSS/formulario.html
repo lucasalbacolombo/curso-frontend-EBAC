@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt_br"> 
+	<head> 
+		<title>Exercício</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="./CSS/style.css">
+	</head>
+
+	<body>
+
+		<header>
+			<h1>Fale Conosco</h1>
+		</header>
+
+		<section>
+
+			<nav>
+				<ul>
+					<li><a href="./home.html">HOME</a></li>
+					<li><a href="./sobre.html">SOBRE</a></li>
+					<li><a href="#contato">CONTATO</a></li>
+				</ul>
+			</nav>
+
+			<article>
+
+				<h1>Contato</h1>
+				<p>Preencha os campos abaixo:</p>
+
+				<form method="post"> 
+					<div>
+						<label for="nome">Nome</label>
+						<input type="text" name="Nome" id=nome placeholder="Digite seu nome">
+					</div>
+
+					<div>
+						<label for="email">E-mail</label>
+						<input type="email" name="e-mail" id=email placeholder="Digite seu e-mail"> 
+					</div>
+
+					<div>
+						<label for="mensagem">Mensagem</label>
+						<textarea name="mensagem" id="mensagem" rows="5" placeholder="Digite sua mensagem"></textarea>
+					</div>
+
+					<div>
+							<label>Qual linguagem você prefere?</label>
+							<input type="radio" name="linguagens" value="HTML"> HTML
+							<input type="radio" name="linguagens" value="CSS"> CSS
+							<input type="radio" name="linguagens" value="JavaScript"> JavaScript
+					</div>
+
+					<div>
+							<label>Quais linguagens você sabe?</label>
+							<input type="checkbox" name="linguagens" value="HTML"> HTML
+							<input type="checkbox" name="linguagens" value="CSS"> CSS
+							<input type="checkbox" name="linguagens" value="JavaScript"> JavaScript
+					</div>
+
+					<div>
+						<label>Qual a sua cor favorita?</label>
+						<select>
+							<option>Azul</option>
+							<option>Verde</option>
+							<option>Vermelho</option>
+						</select>
+					</div>
+
+					<div>
+						<input type="submit" id="botao">
+					</div>
+
+				</form>
+
+			</article>
+
+		</section>
+
+		<footer>
+			Desenvolvido por Lucas
+		</footer>
+
+	</body>
+</html>

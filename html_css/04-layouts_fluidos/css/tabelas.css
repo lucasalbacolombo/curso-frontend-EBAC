@@ -1,0 +1,44 @@
+table {
+	width: 100%;
+	border-collapse:collapse;
+	overflow-y: scroll;
+}
+
+table tr {
+	text-align: center;
+}
+
+thead th {
+	background-color: #ABABAB;
+	height: 5rem;
+}
+
+table tbody tr:nth-child(1) {
+	font-weight: bold;
+}
+
+table tbody tr:nth-child(odd) {
+	background: #DEDFDE;
+}
+
+table th, table td {
+	padding: 1rem;
+	font-size: 1.6rem;
+	text-align: center;
+	vertical-align: middle;
+	border: 1px solid gray;
+}
+
+table tr td:first-child {
+	font-weight: bold;
+}
+
+.table-container {
+	padding: 2rem 1rem;
+	overflow-x: scroll;
+}
+
+.table-container tfoot td {
+	font-weight: bold;
+	background-color: #DEDFDE;
+}
