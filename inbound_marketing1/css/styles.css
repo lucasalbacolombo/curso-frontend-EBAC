@@ -133,6 +133,36 @@ section article {
     width: 70%;
 }
 
+.c-forms-form-body {
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+}
+
+.forms h1 {
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%; 
+} 
+
+.forms p {
+    margin-left: 15%;
+    margin-right: 16%;
+    width: 69%; 
+}
+
+#center {
+    margin-left: 15%;
+    margin-right: 16%;
+    width: 69%;
+}
+
+.center.container {
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+}
+
 footer {
     background-color: #254159;  
     display: block;
@@ -155,13 +185,22 @@ footer small {
     overflow: hidden !important;
 }
 
-@media (max-width: 654px) {
-    .c-forms-form-body {
+@media (max-width: 883px) {
+    .c-forms-form-body,
+    .c-forms-form {
         background-color: #b8c8d6 !important;
+        margin-top: 43px !important;
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 654px) {
+    .c-forms-form-body {
+        background-color: #b8c8d6 !important;
+        margin-top: 20px !important;
+    }
+}
+
+@media (max-width: 510px) {
     section nav,
     section article {
         width: 100%;
@@ -170,5 +209,11 @@ footer small {
     .container {
         padding-left: 1%;
         padding-right: 1%;
+    }
+}
+
+@media (max-width: 360px) {
+    .cognito {
+        height: 370px !important;
     }
 }
