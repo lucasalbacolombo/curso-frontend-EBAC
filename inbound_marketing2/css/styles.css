@@ -26,6 +26,7 @@ header {
     float: left;
     width: 100%;
     border-bottom: 1px outset #254159;
+    padding-top: 5px;
 }
 
 header p {
@@ -88,6 +89,7 @@ img {
     height: 55vh;
     background-color: rgba(255, 255, 255, .1);
     width: 100%;
+    background-repeat: no-repeat;
 }
 
 #tenho-interesse {
@@ -156,6 +158,7 @@ footer {
     display: block;
     float: left;
     width: 100%;
+    height: 10vh;
 }
 
 footer p {
