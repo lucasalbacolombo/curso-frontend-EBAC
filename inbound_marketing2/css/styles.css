@@ -195,8 +195,21 @@ nav a:hover {
 section article {
     display: block;
     float: left;
-    width: 70%;
+    width: 50%;
 }
+
+.forms {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+}
+
+.forms1 {
+    margin: auto;
+    float: none;
+    align-items: center;
+    justify-content: center;
+}    
 
 footer {
     background-color: #254159;  
@@ -245,6 +258,7 @@ footer small {
     .produtos {
         max-width: 90%;
     }
+
 }
 
 .cog-form__content {
