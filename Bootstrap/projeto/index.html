@@ -30,6 +30,43 @@
         </div>
     </header>
     
+    <section id="carousel">
+        <div class="container">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="ratio ratio-16x9">
+                        <img src="./images/1.jpg" class="d-block w-100 opacity-75" alt="epis">
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="ratio ratio-16x9">
+                        <img src="./images/2.jpg" class="d-block w-100 opacity-75" alt="epis">
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="ratio ratio-16x9">
+                        <img src="./images/3.jpg" class="d-block w-100 opacity-75" alt="epis">
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+    </section>
+
     <section id="sobre">
         <div class="container">
             <div class="row">
@@ -83,26 +120,63 @@
         </div>
 
     </section>
-    <section id="contato">
+    
+    <section id="formulario">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12">
-                    <h2>Contato</h2>
-                    <p>Ficou interessado? Preencha os campos do formulário para receber uma cotação.</p>
+                    <h2>Cadastro</h2>
+                    <p>Ficou interessado? Preencha os campos do formulário!</p>
                 </div>             
-                    <form class="form">
-                        <div class="input-group">
-                            <input class="form-control" type="text" name="nome" required="required" placeholder="Digite seu nome">
+
+                <form class="form">
+                    <div class="row">
+                        <div class="col">
+                            <div class="input-group">
+                                <input class="form-control" type="text" name="nome" placeholder="Digite seu nome">
+                            </div>
                         </div>
-                        <div class="input-group">
-                            <input class="form-control" type="text" name="email" required="required" placeholder="Digite seu e-mail">
+                        <div class="col">
+                            <div class="input-group">
+                                <input class="form-control" type="text" name="email" placeholder="Digite seu e-mail">
+                            </div>
                         </div>
-                        <div class="input-group">
-                            <textarea  class="form-control" name="" required="required" rows="5"></textarea>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="endereco" class="col-form-label col-form-label-sm">Endereço Completo</label>
+                            <input type="text" id="endereco" class="form-control">
                         </div>
-                        <button type="submit" class="btn btn-md btn-primary">Solicitar Cotação</button>
-                    </form>
-                </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="cidade" class="col-form-label col-form-label-sm">Cidade</label>
+                            <input type="text" name="cidade" id="cidade" class="form-control">
+                        </div>
+                        <div class="col">
+                            <label for="estado" class="col-form-label col-form-label-sm">Estado</label>
+                            <select name="estado" id="estado" class="form-control">
+                                <option value="">Selecione um estado</option>
+                                <option value="sp">SP</option>
+                                <option value="al">AL</option>
+                                <option value="mg">MG</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label for="cep" class="col-form-label col-form-label-sm">CEP</label>
+                            <input type="text" name="cep" id="cep" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="input-group">
+                                <label for="info" class="col-form-label col-form-label-sm">Informações</label>
+                                <textarea class="form-control" name="informacoes" id="info" rows="5"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-md btn-primary">Enviar</button>
+                </form>
         </div>
     </section>
 
@@ -222,5 +296,12 @@
     </div>
 
     <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+        var myCarousel = document.querySelector('#carouselExampleFade')
+        var carousel = new bootstrap.Carousel(myCarousel, {
+            pause: false,
+            interval: 10000
+        })
+    </script>
 </body>
 </html>
