@@ -1,7 +1,7 @@
-function calcularPrestacoes(numero_prestacao) {
+function calcularPrestacoes(num) {
 
-    let valor = {};
-    let prestacao = {};
+    let valor = 0;
+    let prestacao = 0;
 
     numero_prestacao = (valor - 3000) / prestacao
 
@@ -9,10 +9,3 @@ function calcularPrestacoes(numero_prestacao) {
 }
 
     var form = document.getElementById('formulario-01');
-
-    form.addEventListener(function(event) {
-    event.preventDefault()
-    var dados = new FormData(this);
-})
-
-    document.getElementById('resultado').innerHTML = texto;
