@@ -1,11 +1,11 @@
-function calcularPrestacoes(num) {
+function calcularPrestacoes() {
 
-    let valor = 0;
-    let prestacao = 0;
+    let valorCarro = document.querySelector('#valor');
+    let entrada = document.querySelector('#entrada');
+    let valorPrestacao = document.querySelector('#prestacao');
+    let numeroPrestacao = (valorCarro - entrada) / valorPrestacao;
 
-    numero_prestacao = (valor - 3000) / prestacao
-
-    return numero_prestacao;
+    console.log (`O valor de cada prestação será de: ${numeroPrestacao}`);
 }
 
-    var form = document.getElementById('formulario-01');
+document.querySelector('#botao').addEventListener('click', calcularPrestacoes);
