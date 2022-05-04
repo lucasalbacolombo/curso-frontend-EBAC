@@ -1,11 +1,16 @@
-function calcularPrestacoes() {
+function calcularPrestacoes(event) {
 
-    let valorCarro = document.querySelector('#valor');
-    let entrada = document.querySelector('#entrada');
-    let valorPrestacao = document.querySelector('#prestacao');
+    event.preventDefault();
+
+    let valorCarro = Number(document.querySelector('#valor').value);
+    let entrada = Number(document.querySelector('#entrada').value);
+    let valorPrestacao = Number(document.querySelector('#prestacao').value);
     let numeroPrestacao = (valorCarro - entrada) / valorPrestacao;
 
-    console.log (`O valor de cada prestação será de: ${numeroPrestacao}`);
+
+    const resultado = document.querySelector('#resultado');
+    resultado.innerHTML = `O número total de parcelas será: ${numeroPrestacao}`;
 }
 
-document.querySelector('#botao').addEventListener('click', calcularPrestacoes);
+
+document.querySelector('#botao').addEventListener('click', calcularPrestacoes)
